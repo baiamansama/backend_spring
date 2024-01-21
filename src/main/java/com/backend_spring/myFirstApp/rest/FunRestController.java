@@ -11,4 +11,15 @@ public class FunRestController {
     public String sayHello() {
         return "Hello World!";
     }
+
+
+    @GetMapping("/workout")
+    public String getDailyWorkOut(){
+        return "run a hard 5km!";
+    }
+    //expose another '/fortune' endpoint
+    @GetMapping("/fortune")
+    public String getDailyFortune(){
+        return "today is your lucky draw!";
+    }
 }
